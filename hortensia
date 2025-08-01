@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hortensia — Alejandro Morado</title>
+  <style>
+    body {
+      background-color: black;
+      color: #c39bd3;
+      font-family: 'Georgia', serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .container {
+      max-width: 800px;
+      padding: 2rem;
+      text-align: center;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      border: 1px solid #c39bd3;
+      margin-bottom: 1rem;
+    }
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    p.haiku {
+      font-size: 1.2rem;
+      font-style: italic;
+      margin-bottom: 2rem;
+    }
+    audio {
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+    a.button {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      color: black;
+      background-color: #c39bd3;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🌸 Hortensia</h1>
+    <p class="haiku">
+      Lluvia persistente,<br />
+      entre sombras florece<br />
+      una gratitud.
+    </p>
+    <img src="hortensia.png" alt="Portada de Hortensia">
+    <audio controls>
+      <source src="hortensia.mp3" type="audio/mpeg">
+      Tu navegador no soporta la reproducción de audio.
+    </audio>
+    <br />
+    <a class="button" href="camelia.html">Pista anterior</a>
+  </div>
+</body>
+</html>
