@@ -1,131 +1,69 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Camelia — Alejandro Morado</title>
   <style>
     body {
-      background-color: #000;
-      color: #bb86fc;
-      font-family: 'Helvetica Neue', sans-serif;
+      background-color: black;
+      color: #c39bd3;
+      font-family: 'Georgia', serif;
       margin: 0;
       padding: 0;
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
-      min-height: 100vh;
     }
-
     .container {
+      max-width: 800px;
+      padding: 2rem;
       text-align: center;
-      max-width: 600px;
-      padding: 2em;
     }
-
     img {
       max-width: 100%;
-      border-radius: 12px;
-      margin-bottom: 1.5em;
-      box-shadow: 0 0 20px rgba(187, 134, 252, 0.3);
+      height: auto;
+      border: 1px solid #c39bd3;
+      margin-bottom: 1rem;
     }
-
     h1 {
-      font-size: 2em;
-      margin-bottom: 0.5em;
+      font-size: 2rem;
+      margin-bottom: 1rem;
     }
-
-    .invitation {
-      font-size: 1em;
-      margin-bottom: 2em;
-      line-height: 1.6;
+    p.description {
+      font-size: 1.2rem;
       font-style: italic;
+      margin-bottom: 2rem;
     }
-
     audio {
       width: 100%;
-      margin-bottom: 1em;
+      margin-bottom: 2rem;
     }
-
-    .download {
+    a.button {
       display: inline-block;
-      margin: 1em 0;
-      padding: 0.6em 1.2em;
-      background-color: #bb86fc;
-      color: #000;
-      border: none;
-      border-radius: 6px;
+      padding: 0.5rem 1rem;
+      color: black;
+      background-color: #c39bd3;
       text-decoration: none;
+      border-radius: 4px;
       font-weight: bold;
-      transition: background 0.3s;
-    }
-
-    .download:hover {
-      background-color: #9e6be2;
-    }
-
-    .nav {
-      margin-top: 2em;
-      font-size: 0.9em;
-      opacity: 0.6;
-    }
-
-    .nav a {
-      color: #bb86fc;
-      text-decoration: none;
-      margin: 0 10px;
-    }
-
-    .subscribe {
-      margin-top: 2em;
-      font-size: 0.9em;
-      color: #888;
-    }
-
-    .subscribe a {
-      color: #bb86fc;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .footer {
-      font-size: 0.8em;
-      opacity: 0.4;
-      margin-top: 4em;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Camélia</h1>
-    <p class="invitation">
-      Hoy te escribo desde un rincón del Jardín donde la gratitud florece en silencio.<br>
-      Esta flor, Camelia, no dice mucho. Pero cuando la escuchas, sabes que te está dando las gracias.<br><br>
-      — Alejandro
+    <h1>🌸 Camelia</h1>
+    <p class="description">
+      Una flor que habla de amor y lealtad.<br />
+      Este susurro pertenece al jardín.
     </p>
-
-    <img src="camelia.jpg" alt="Camelia">
-
+    <img src="camelia.jpg" alt="Portada de Camelia">
     <audio controls>
       <source src="camelia.mp3" type="audio/mpeg">
-      Tu navegador no soporta el audio.
+      Tu navegador no soporta la reproducción de audio.
     </audio>
-
-    <a href="camelia.mp3" class="download" download>Descargar Camelia</a>
-
-    <div class="nav">
-      <a href="#">← Pista anterior</a> |
-      <a href="#">Siguiente pista →</a>
-    </div>
-
-    <div class="subscribe">
-      Sigue el jardín en <a href="https://www.threads.net/" target="_blank">Threads</a> para más susurros.
-    </div>
-
-    <div class="footer">
-      Alejandro Morado — El Jardín de los Susurros
-    </div>
+    <br />
+    <a class="button" href="hortensia.html">Siguiente pista</a>
   </div>
 </body>
 </html>
