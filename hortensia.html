@@ -3,104 +3,65 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Hortensia — Alejandro Morado</title>
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Georgia&display=swap" rel="stylesheet">
+  <title>Hortensia</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
   <style>
     body {
+      background-color: #0d0d0d;
+      color: #d0c1e0;
+      font-family: 'Playfair Display', serif;
       margin: 0;
       padding: 0;
-      font-family: Georgia, serif;
-      background-image: url('background.jpg');
+      background-image: url('leaves-faint-bg.png'); /* opcional si tienes fondo tenue */
       background-size: cover;
       background-position: center;
-      background-attachment: fixed;
-      color: #c39bd3;
     }
-
     .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 3rem 2rem;
       display: flex;
-      flex-wrap: wrap;
+      flex-direction: row;
       align-items: center;
       justify-content: space-between;
+      padding: 3em;
+      min-height: 100vh;
+      box-sizing: border-box;
     }
-
     .text-section {
-      flex: 1 1 45%;
-      padding-right: 2rem;
+      max-width: 50%;
+      padding-right: 2em;
     }
-
-    .image-section {
-      flex: 1 1 50%;
-      text-align: right;
-    }
-
-    img {
-      max-width: 100%;
-      height: auto;
-      border: 1px solid #c39bd3;
-      border-radius: 8px;
-    }
-
     h1 {
-      font-family: 'Dancing Script', cursive;
-      font-size: 3rem;
-      margin-bottom: 1rem;
-      color: #f2e3ff;
-    }
-
-    .haiku {
-      font-size: 1.4rem;
-      line-height: 1.8;
+      font-size: 3em;
       font-style: italic;
+      margin-bottom: 0.5em;
     }
-
+    p.haiku {
+      font-size: 1.5em;
+      line-height: 1.6;
+    }
     .author {
-      margin-top: 2rem;
-      font-family: 'Dancing Script', cursive;
-      font-size: 1.5rem;
-      text-align: left;
-      color: #e3c1f9;
+      font-style: italic;
+      font-size: 1.2em;
+      margin-top: 1em;
+      color: #aaa;
     }
-
-    .audio-section {
+    .image-section img {
       width: 100%;
-      text-align: center;
-      margin-top: 3rem;
+      max-width: 400px;
+      border-radius: 12px;
     }
-
     audio {
-      width: 80%;
-      margin-bottom: 1rem;
+      margin-top: 2em;
+      width: 100%;
     }
-
-    a.button {
-      display: inline-block;
-      padding: 0.6rem 1.2rem;
-      color: black;
-      background-color: #c39bd3;
+    .nav {
+      text-align: center;
+      margin-top: 2em;
+    }
+    .nav a {
+      color: #caa7ff;
       text-decoration: none;
-      border-radius: 4px;
-      font-weight: bold;
-      transition: background 0.3s;
-    }
-
-    a.button:hover {
-      background-color: #d9a8ec;
-    }
-
-    @media screen and (max-width: 768px) {
-      .container {
-        flex-direction: column;
-        padding: 2rem;
-      }
-      .text-section, .image-section {
-        flex: 1 1 100%;
-        padding: 0;
-        text-align: center;
-      }
+      font-size: 1em;
+      border-bottom: 1px solid #caa7ff;
     }
   </style>
 </head>
@@ -108,25 +69,23 @@
   <div class="container">
     <div class="text-section">
       <h1>Hortensia</h1>
-      <div class="haiku">
-        Bajo la lluvia<br>
-        los pétalos murmuran<br>
-        gratitud antigua.
-      </div>
+      <p class="haiku">
+        Lluvia de junio, <br>
+        florecen mis silencios <br>
+        con gratitud gris.
+      </p>
       <div class="author">— Alejandro Morado</div>
+      <audio controls>
+        <source src="hortensia.mp3" type="audio/mpeg" />
+        Tu navegador no soporta el reproductor de audio.
+      </audio>
+      <div class="nav">
+        <p><a href="camelia.html">← Pista anterior: Camelia</a></p>
+      </div>
     </div>
     <div class="image-section">
-      <img src="hortensia.png" alt="Portada de Hortensia" />
+      <img src="hortensia.png" alt="Flor Hortensia">
     </div>
-  </div>
-
-  <div class="audio-section">
-    <audio controls>
-      <source src="hortensia.mp3" type="audio/mpeg">
-      Tu navegador no soporta la reproducción de audio.
-    </audio>
-    <br>
-    <a class="button" href="camelia.html">Pista anterior</a>
   </div>
 </body>
 </html>
