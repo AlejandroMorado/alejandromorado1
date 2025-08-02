@@ -7,27 +7,23 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
   <style>
     body {
-      background-color: #0d0d0d;
-      color: #d0c1e0;
-      font-family: 'Playfair Display', serif;
       margin: 0;
       padding: 0;
-      background-image: url('leaves-faint-bg.png'); /* opcional si tienes fondo tenue */
+      background-image: url('background.jpg');
       background-size: cover;
       background-position: center;
+      background-attachment: fixed;
+      font-family: 'Playfair Display', serif;
+      color: #e5dbf5;
     }
-    .container {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-between;
-      padding: 3em;
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.6);
       min-height: 100vh;
-      box-sizing: border-box;
-    }
-    .text-section {
-      max-width: 50%;
-      padding-right: 2em;
+      padding: 3em;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
     }
     h1 {
       font-size: 3em;
@@ -37,54 +33,45 @@
     p.haiku {
       font-size: 1.5em;
       line-height: 1.6;
+      margin: 0;
     }
     .author {
       font-style: italic;
       font-size: 1.2em;
       margin-top: 1em;
-      color: #aaa;
-    }
-    .image-section img {
-      width: 100%;
-      max-width: 400px;
-      border-radius: 12px;
+      color: #d2b9ff;
     }
     audio {
       margin-top: 2em;
       width: 100%;
+      max-width: 400px;
     }
     .nav {
-      text-align: center;
       margin-top: 2em;
     }
     .nav a {
-      color: #caa7ff;
+      color: #dab0ff;
       text-decoration: none;
       font-size: 1em;
-      border-bottom: 1px solid #caa7ff;
+      border-bottom: 1px solid #dab0ff;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <div class="text-section">
-      <h1>Hortensia</h1>
-      <p class="haiku">
-        Lluvia de junio, <br>
-        florecen mis silencios <br>
-        con gratitud gris.
-      </p>
-      <div class="author">— Alejandro Morado</div>
-      <audio controls>
-        <source src="hortensia.mp3" type="audio/mpeg" />
-        Tu navegador no soporta el reproductor de audio.
-      </audio>
-      <div class="nav">
-        <p><a href="camelia.html">← Pista anterior: Camelia</a></p>
-      </div>
-    </div>
-    <div class="image-section">
-      <img src="hortensia.png" alt="Flor Hortensia">
+  <div class="overlay">
+    <h1>Hortensia</h1>
+    <p class="haiku">
+      Lluvia de junio, <br>
+      florecen mis silencios <br>
+      con gratitud gris.
+    </p>
+    <div class="author">— Alejandro Morado</div>
+    <audio controls>
+      <source src="hortensia.mp3" type="audio/mpeg" />
+      Tu navegador no soporta el reproductor de audio.
+    </audio>
+    <div class="nav">
+      <p><a href="camelia.html">← Pista anterior: Camelia</a></p>
     </div>
   </div>
 </body>
